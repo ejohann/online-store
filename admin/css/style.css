@@ -96,6 +96,15 @@ body {
     border: 1px solid #fff;
 }
 
+#bodyright form table tr td select{
+    padding-left: 2%;
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+
 #bodyright form button{
     border-radius: 3px;
     color: #fff;
