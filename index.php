@@ -46,5 +46,9 @@
     <div id="bodyright">
         <h3>GREAT DEALS</h3>
     </div>
+    <br clear="all" />
+    <div id="footer">
+        <h4>Copyright 2019 &copy; Online Store Developed By Hanne Digital</h4>
+    </div>
 </body>
 </html>
