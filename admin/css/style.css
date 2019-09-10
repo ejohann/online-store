@@ -34,6 +34,28 @@ body {
     line-height: 40px;
 }
 
+#bodyleft ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#bodyleft ul li {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+#bodyleft ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 3%;
+    display: block;
+}
+
+#bodyleft ul li:hover {
+    background: #800080;
+}
+
 #bodyright {
     margin: 20px 0px 10px 0px;
     float: left;
