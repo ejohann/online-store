@@ -1,8 +1,22 @@
 <?php if(isset($_GET['view_all_sub_categories'])) : ?>
+    <?php include("./inc/init.php"); ?>
     <div id="bodyright">
         <h3>Add New Sub-Category Here</h3>
         <form method="POST">
             <table>
+                <tr>
+                    <td>Select Sub-Category Name: </td>
+                    <td>
+                        <select type="text" name="category_name" required>
+                            <?php 
+                               $categories = DB_Helper::allCategories();
+                                foreach($categories as $category){
+                                    echo "<option value='".$category['id']."'>".$category['category_name']."</option>";
+                               }
+                            ?>
+                        </select>    
+                    </td>
+                </tr>
                 <tr>
                     <td>Enter Sub-Category Name: </td>
                     <td><input type="text" name="sub_category_name" required></td>
@@ -13,7 +27,7 @@
 
         <?php 
             if(isset($_POST['add_sub_category'])){
-                include("./inc/init.php");
+
                 if(DB_Helper::addSubCategory($_POST['sub_category_name'])){
                     echo "<script>alert('Sub-Category added successfully!');</script>";
                   }
