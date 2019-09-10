@@ -64,3 +64,48 @@ body {
     height: 500px;
     background: #800080;
 }
+
+#bodyright h3 {
+    border-bottom: 2px solid #400040;
+    border-radius: 3px;
+    text-align: center;
+    background: #800080;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+#bodyright form table{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#bodyright form table tr td {
+    width: 50%;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#bodyright form table tr td input{
+    padding-left: 2%;
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+#bodyright form button{
+    border-radius: 3px;
+    color: #fff;
+    height: 30px;
+    margin-top: 20px;
+    width: 200px;
+    background: #800080;
+    border: 2px solid #400040;
+}
+
+#bodyright form button:hover{
+    background: #400040;
+}
