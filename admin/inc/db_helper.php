@@ -13,9 +13,12 @@
 
         public static function allCategories(){
             global $database;
+            $results = array();
             $select_categories = $database->connection->prepare("SELECT * FROM main_cat");
             $select_categories->execute();
-            $results = $select_categories->fetch(PDO::FETCH_ASSOC);
+            while($row = $select_categories->fetch(PDO::FETCH_ASSOC)){
+                $results[] = $row;
+             }
             return $results ? $results : false;
         }
     
