@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="header">
-
-    </div>
-    <div id="bodyleft">
-
-    </div>
-    <div id="bodyright">
-        
-    </div>
+  <?php 
+    include_once("./inc/header.php");
+    include_once("./inc/bodyleft.php");
+    include_once("./inc/bodyright.php");
+  
+  ?>
+    
+   
 </body>
 </html>
