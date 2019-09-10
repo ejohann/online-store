@@ -1,0 +1,6 @@
+CREATE DATABASE online_store;
+
+CREATE TABLE main_cat(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(100) UNIQUE NOT NULL
+);
