@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div id="header">
+
+    </div>
+    <div id="bodyleft">
+
+    </div>
+    <div id="bodyright">
+        
+    </div>
 </body>
 </html>
