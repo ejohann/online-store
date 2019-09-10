@@ -14,9 +14,11 @@
         <?php 
             if(isset($_POST['add_category'])){
                 include("./inc/init.php");
-                if(DB_Helper::addCategory($_POST['category_name']))
-                {
-                    echo "Category name inserted";
+                if(DB_Helper::addCategory($_POST['category_name'])){
+                    echo "<script>alert('Category added successfully!');</script>";
+                  }
+                else{
+                    echo "<script>alert('Category NOT successfully added!');</script>";
                 }
             }
         ?>
