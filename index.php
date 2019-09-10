@@ -9,16 +9,7 @@
 </head>
 <body>
     <?php include_once("./inc/header.php"); ?>
-    <div id="navbar">
-        <ul>
-            <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">BIRTHDAY</a></li>
-            <li><a href="#">GIFTS FOR HIM</a></li>
-            <li><a href="#">FLOWERS</a></li>
-            <li><a href="#">GIFTS FOR HER</a></li>
-            <li><a href="#">BRANDS</a></li>
-        </ul>
-    </div>
+    <?php include_once("./inc/navbar.php"); ?>
     <div id="bodyleft">
         <h2>DEALS OF THE DAY</h2>
         <div id="slider">
