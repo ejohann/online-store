@@ -5,11 +5,21 @@
             <table>
                 <tr>
                     <td>Enter Category Name: </td>
-                    <td><input type="text" name="category_name"></td>
+                    <td><input type="text" name="category_name" required></td>
                 </tr>
             </table>
             <center><button name="add_category">Add Category</button></center>
         </form>
+
+        <?php 
+            if(isset($_POST['add_category'])){
+                include("./inc/init.php");
+                if(DB_Helper::addCategory($_POST['category_name']))
+                {
+                    echo "Category name inserted";
+                }
+            }
+        ?>
     </div>
 <?php else : ?>
    
