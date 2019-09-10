@@ -5,9 +5,9 @@
         <form method="POST">
             <table>
                 <tr>
-                    <td>Select Sub-Category Name: </td>
+                    <td>Select Category Name: </td>
                     <td>
-                        <select type="text" name="category_name" required>
+                        <select type="text" name="category_id" required>
                             <?php 
                                $categories = DB_Helper::allCategories();
                                 foreach($categories as $category){
@@ -24,11 +24,9 @@
             </table>
             <center><button name="add_sub_category">Add Sub-Category</button></center>
         </form>
-
         <?php 
             if(isset($_POST['add_sub_category'])){
-
-                if(DB_Helper::addSubCategory($_POST['sub_category_name'])){
+               if(DB_Helper::addSubCategory($_POST['sub_category_name'], $_POST['category_id'])){
                     echo "<script>alert('Sub-Category added successfully!');</script>";
                   }
                 else{
