@@ -1,6 +1,6 @@
 <?php 
-       require_once("./db.php");
-       require_once("./db_helper.php");
+       require_once("./inc/db.php");
+       require_once("./inc/db_helper.php");
 
 
 

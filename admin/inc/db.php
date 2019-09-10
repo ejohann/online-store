@@ -4,7 +4,7 @@
     $site_dir = "online-store";
     $site_path = $root_dir . $separator . $site_dir . $separator;
 
-    require_once($site_path ."config.php");
+    require_once($site_path ."admin/inc/config.php");
     class Database{
      
         public $connection;
