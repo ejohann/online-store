@@ -11,6 +11,18 @@
             return $id ? $id : false;
         }
 
+        public static function addSubCategory($sub_cat_name, $cat_id){
+            global $database;
+            $insert_sub_category = $database->connection->prepare("INSERT INTO sub_cat (sub_category_name, category_id) 
+                VALUES (:sub_category, :category_id)");
+            $insert_sub_category->bindParam(":sub_category", $sub_cat_name);
+            $insert_sub_category->bindParam(":category_id", $cat_id);
+            $insert_sub_category->execute();
+            $id = $database->connection->lastInsertId();
+            $insert_sub_category = null;
+            return $id ? $id : false;
+        }
+
         public static function allCategories(){
             global $database;
             $results = array();
